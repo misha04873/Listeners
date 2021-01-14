@@ -17,10 +17,13 @@ public class GoogleSearch {
     public void setText(String text) {
     driver.findElement(textfield).sendKeys(text);
     driver.findElement(button).isDisplayed();
+    driver.findElement(button).isEnabled();
     }
 
     public void clickButton() {
-
+    driver.findElement(button).isDisplayed();
+    driver.findElement(button).isEnabled();
+    System.out.println("Button is enabled");
     driver.findElement(button).click();
     }
 

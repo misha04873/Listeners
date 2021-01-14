@@ -44,6 +44,6 @@ public class TestNGListeners implements ITestListener {
 
     @Override
     public void onFinish(ITestContext context) {
-
+        System.out.println("Test is suceffuly completed");
     }
 }
