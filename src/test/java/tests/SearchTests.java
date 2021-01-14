@@ -4,9 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 import pages.GoogleSearch;
 
+@Listeners({listeners.TestNGListeners.class})
 public class SearchTests {
 
     private static WebDriver driver;
